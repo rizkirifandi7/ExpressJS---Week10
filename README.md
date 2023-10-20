@@ -44,7 +44,7 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 - Node.js
 - PostgreSQL
 - Browser
-- Postman
+- Postman (optional)
 
 ## Instalasi
 
