@@ -4,57 +4,37 @@ Nama : Rizki Rifani (FSWD 5A)
 
 Program ini merupakan projek Restfull API yang terdiri dari GET, POST, DELETE, dan PUT. Pada program ini ada beberapa endpoint utama yang digunakan untuk menjalan program yaitu sebagai berikut:
 
-- Untuk akses ke User:
-  GET semua data : `http://localhost:3000/users/all`
- 
-- Untuk akses ke  Movie: `http://localhost:3000/api/movies`
-- Untuk akses melalui Swagger : `http://localhost:3000/api-docs`
-
-Namun untuk mengakses program diperlukan endpoint yang lebih detail yaitu sebagai berikut :
-
-- Untuk akses ke User Login: `http://localhost:3000/api/users/login`
-- Untuk akses ke User Register: `http://localhost:3000/api/users/register`
-
-Pada program ini untuk mengakses movie diperlukan cara khusus yaitu user harus sudah terdaftar dan memiliki token yang nantinya dapat digunakan untuk melakukan CRUD data movie yaitu sebagai berikut untuk endpoint lebih detail dari movie:
-
-- Untuk mendapatkan data movie dengan pagination(GET): `http://localhost:3000/api/movies`
-- Untuk membuat data movie baru(POST): `http://localhost:3000/api/`
-- Untuk mendapatkan data movie by id (GET): `http://localhost:3000/api/:id`
-- Untuk update data movie(PUT): `http://localhost:3000/api/:id`
-- Untuk hapus data movie(DELETE): `http://localhost:3000/api/:id`
-
+Untuk akses Users data :
+- All Data : `http://localhost:3000/users/all`
+- Create Data : `http://localhost:3000/users/add`
+- Delete Data : `http://localhost:3000/users/delete/:id`
+- Update Data : `http://localhost:3000/users/edit/:id`
 
 </br>
-Pada program ini terdiri dari 6 folder dan 1 file utama, yaitu :
+
+Untuk akses Movies data :
+- All Data : `http://localhost:3000/movies/all`
+- Create Data : `http://localhost:3000/movies/add`
+- Delete Data : `http://localhost:3000/movies/delete/:id`
+- Update Data : `http://localhost:3000/movies/edit/:id`
+
+</br>
+Pada program ini terdiri dari beberap folder dan file :
 </br>
 
-- models
+1.	src: Ini adalah folder utama yang berisi sebagian besar kode program
+•	models: Folder yang berisi file userModel dan movieModel yang berhubungan langsung dengan basis data. Isi : userModel.js dan userModel.js
+•	controllers: Folder yang berisi file untuk menangani logika bisnis, mengatur aliran permintaan HTTP, dan memanggil layanan. Isi : movieController.js dan userController.js
+•	routes: Folder yang berisi file yang mendefinisikan rute atau endpoint HTTP dan mengarahkannya ke metode kontrol yang sesuai. Isi : userRoutes.js, movieRoutes.js, dan index.js
+•	uploads: Folder yang berisi untuk menyimpan berkas yang diunggah.
+•	db: folder berisi file untuk koneksi ke basis data. Isi : database.js
+•	utils: folder ini berisi file utilitas atau fungsi bantuan yang digunakan di seluruh program. Isi : multer.js dan flash.js
+•	repositories: Folder yang digunakan untuk mengisolasi akses langsung ke basis data dari controllers. Isi : userRepository.js dan movieRepository.js
+•	views: Folder Ini adalah file untuk tampilan, seperti berkas EJS atau file HTML.
+•	public: Folder ini berisi aset publik yang dapat diakses langsung, yang berisi file CSS, dan JavaScript.
+2.	node_modules: Ini adalah Folder di mana semua modul Node.js eksternal diinstal.
+3.	index.js: File adalah file utama dari program. Ini adalah file untuk menyiapkan server, mengonfigurasi middleware, dan mendefinisikan rute.
 
-Folder ini merupakan berisi file user dan movie yang digunakan untuk melakukan CRUD data dari database dengan query
-
-- controller
-  
-Folder ini merupakan berisi file user dan movie yang digunakan untuk melakukan aksi ketika ada data yang akan di CRUD
-
-- db
-
-Folder ini berisi file yang digunakan untuk menghubungkan program ke databse postgreSQL
-
-- middleware
-
-Folder ini berisi file yang digunakan untuk melakukan auth
-
-- routes
-
-Folder ini berisi file route dari user dan movie yang digunakan untuk melakukan pemanggilan dari setiap endpoint 
-
-- utils
-
-Folder ini berisi konfigurasi untuk swagger
-
-- index.js
-
-file ini merupakan file utama untuk menjalankan keseluruhan program
 
 
 ## Persyaratan
