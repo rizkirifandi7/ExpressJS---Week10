@@ -51,12 +51,12 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
 1. Clone repositori ini ke komputer:
 
    ```bash
-   git clone https://github.com/rizkirifandi7/HW-Express-Week9.git
+   git clone https://github.com/rizkirifandi7/ExpressJS---Week10.git
 
 2. Pindah ke direktori projek
 
    ```bash
-   cd HW-Express-Week9
+   cd ExpressJS---Week10
 
 3. Install package module
 
@@ -76,83 +76,71 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
    ```bash
    npm run start
 
-2. Untuk memudahkan cara penggunaan program, gunakanlah endpoint yang menggunakan Swagger dan masukan endpoint tersebut ke browser :
+2. Mulailah menggunakan endpoint untuk mendapatkan semua data User atau Movie:
 
      ```bash
-   http://localhost:3000/api-docs/
+   http://localhost:3000/users/all atau  http://localhost:3000/movies/all
 
   Maka akan muncul seperti berikut:
 
-  ![Start](./public/assets/1.jpeg)
+  ![users](./public/img/alluser.jpeg)
+  
+  </br>
+  
+  ![movies](./public/img/allmovie.jpeg)
+  
      
-3. Untuk pertama cobalah untuk melakukan registrasi user dengan mengakses menu registrasi, isi setiap data nya :
+3. Untuk pertama cobalah untuk melakukan create User atau Movie :
 
-  ![Regis](./public/assets/regis1.jpeg)
+     ```bash
+   http://localhost:3000/users/add/:id atau  http://localhost:3000/movies/add/:id
 
+  Maka akan muncul seperti berikut:
+  
+  ![createuser](./public/img/newuser.jpeg)
+  
   </br>
-  Maka akan menghasilkan output dan menghasilkan token yang nantinya dapat digunakan untuk melakukan CRUD data movie:
+  
+  ![createmovie](./public/img/newmovies.jpeg)
+  
 
-  ![Regis](./public/assets/regis2.jpeg)
+4. Kemudian cobalah melakukan update data user atau movie :
 
-4. Kemudian cobalah melakukan login 
+     ```bash
+   http://localhost:3000/users/edit/:id atau  http://localhost:3000/movies/edit/:id
 
-  ![Login](./public/assets/login1.jpeg)
- 
+  Maka akan muncul seperti berikut:
+  
+  ![createuser](./public/img/edituser.jpeg)
+  
   </br>
-   Maka akan menghasilkan output dan menghasilkan token yang nantinya dapat digunakan untuk melakukan CRUD data movie:
+  
+  ![createmovie](./public/img/editmovie.jpeg)
 
-  ![Login](./public/assets/login2.jpeg)
+5. Kemudian cobalah delete data user atau movie :
 
-5. Kemudian cobalah melakukan CRUD database movie namun sebelum melakukan itu masukan terlebih dahulu token yang didapatkan dari hasil registrasi ataupun login, setelah itu masukan ke Authorize 
+     ```bash
+   http://localhost:3000/users/delete/:id atau  http://localhost:3000/movies/delete/:id
 
-  ![Auth](./public/assets/auth2.jpeg)
- 
+  Maka akan muncul seperti berikut:
+  
+  ![createuser](./public/img/deluser.jpeg)
+  
   </br>
-   Maka akan menghasilkan output sebagai berikut dan pengguna sudah dapat melakukan CRUD untuk data movie:
+  
+  ![createmovie](./public/img/delmovie.jpeg)
 
-  ![Auth](./public/assets/auth1.jpeg)
 
-6. Kemudian cobalah melakukan CRUD database movie dengan mencoba pagination
+6. Kemudian cobalah mencari data user atau movie :
 
-  ![Pagi](./public/assets/pagi1.jpeg)
- 
+     ```bash
+   http://localhost:3000/users/all atau  http://localhost:3000/movies/all
+
+  Maka akan muncul seperti berikut:
+  
+  ![createuser](./public/img/cariuser.jpeg)
+  
   </br>
-   Maka akan menghasilkan output sebagai berikut:
+  
+  ![createmovie](./public/img/carimovie.jpeg)
 
-  ![Auth](./public/assets/pagi2.jpeg)
-
-7. Kemudian cobalah melakukan CRUD database movie dengan mencoba membuat data movie baru
-
-  ![create](./public/assets/create1.jpeg)
- 
-  </br>
-   Maka akan menghasilkan output sebagai berikut:
-
-  ![create](./public/assets/create2.jpeg)
-
-8. Kemudian cobalah melakukan CRUD database movie dengan mencoba mendapatkan data berdasarkan id
-
-  ![getid](./public/assets/getid1.jpeg)
- 
-  </br>
-   Maka akan menghasilkan output sebagai berikut:
-
-  ![getid](./public/assets/getid2.jpeg)
-
-9. Kemudian cobalah melakukan CRUD database movie dengan melakukan update data
-
-  ![update](./public/assets/update1.jpeg)
- 
-  </br>
-   Maka akan menghasilkan output sebagai berikut:
-
-  ![update](./public/assets/update2.jpeg)
-
-10. Kemudian cobalah melakukan CRUD database movie dengan melakukan hapus data
-
-  ![del](./public/assets/del1.jpeg)
- 
-  </br>
-   Maka akan menghasilkan output sebagai berikut:
-
-  ![del](./public/assets/del2.jpeg)
