@@ -23,15 +23,15 @@ Pada program ini terdiri dari beberap folder dan file :
 </br>
 
 1.	src: Ini adalah folder utama yang berisi sebagian besar kode program
-•	models: Folder yang berisi file userModel dan movieModel yang berhubungan langsung dengan basis data. Isi : userModel.js dan userModel.js
-•	controllers: Folder yang berisi file untuk menangani logika bisnis, mengatur aliran permintaan HTTP, dan memanggil layanan. Isi : movieController.js dan userController.js
-•	routes: Folder yang berisi file yang mendefinisikan rute atau endpoint HTTP dan mengarahkannya ke metode kontrol yang sesuai. Isi : userRoutes.js, movieRoutes.js, dan index.js
-•	uploads: Folder yang berisi untuk menyimpan berkas yang diunggah.
-•	db: folder berisi file untuk koneksi ke basis data. Isi : database.js
-•	utils: folder ini berisi file utilitas atau fungsi bantuan yang digunakan di seluruh program. Isi : multer.js dan flash.js
-•	repositories: Folder yang digunakan untuk mengisolasi akses langsung ke basis data dari controllers. Isi : userRepository.js dan movieRepository.js
-•	views: Folder Ini adalah file untuk tampilan, seperti berkas EJS atau file HTML.
-•	public: Folder ini berisi aset publik yang dapat diakses langsung, yang berisi file CSS, dan JavaScript.
+-	models: Folder yang berisi file userModel dan movieModel yang berhubungan langsung dengan basis data. Isi : userModel.js dan userModel.js
+-	controllers: Folder yang berisi file untuk menangani logika bisnis, mengatur aliran permintaan HTTP, dan memanggil layanan. Isi : movieController.js dan userController.js
+-	routes: Folder yang berisi file yang mendefinisikan rute atau endpoint HTTP dan mengarahkannya ke metode kontrol yang sesuai. Isi : userRoutes.js, movieRoutes.js, dan index.js
+-	uploads: Folder yang berisi untuk menyimpan berkas yang diunggah.
+-	db: folder berisi file untuk koneksi ke basis data. Isi : database.js
+-	utils: folder ini berisi file utilitas atau fungsi bantuan yang digunakan di seluruh program. Isi : multer.js dan flash.js
+-	repositories: Folder yang digunakan untuk mengisolasi akses langsung ke basis data dari controllers. Isi : userRepository.js dan movieRepository.js
+-	views: Folder Ini adalah file untuk tampilan, seperti berkas EJS atau file HTML.
+-	public: Folder ini berisi aset publik yang dapat diakses langsung, yang berisi file CSS, dan JavaScript.
 2.	node_modules: Ini adalah Folder di mana semua modul Node.js eksternal diinstal.
 3.	index.js: File adalah file utama dari program. Ini adalah file untuk menyiapkan server, mengonfigurasi middleware, dan mendefinisikan rute.
 
