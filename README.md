@@ -104,6 +104,12 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   Validasi apabila tidak diisi :
 
  ![validuser](./public/img/validuser.jpeg)
+
+ </br>
+  
+  alert apabila berhasil :
+
+ ![validuser](./public/img/popuser.jpeg)
   
   </br>
   
@@ -114,6 +120,12 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   Validasi apabila tidak diisi :
 
  ![validmovie](./public/img/validmovie.jpeg)
+ 
+  </br>
+  
+  alert apabila berhasil :
+
+ ![validuser](./public/img/popmovie.jpeg)
   
 
 4. Kemudian cobalah melakukan update data user atau movie :
@@ -124,10 +136,22 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   Maka akan muncul seperti berikut:
   
   ![createuser](./public/img/edituser.jpeg)
+
+ </br>
+  
+  alert apabila berhasil update :
+
+ ![validuser](./public/img/popupuser.jpeg)
   
   </br>
   
   ![createmovie](./public/img/editmovie.jpeg)
+
+   </br>
+  
+  alert apabila berhasil update :
+
+ ![validuser](./public/img/popupmovie.jpeg)
 
 5. Kemudian cobalah delete data user atau movie :
 
@@ -137,10 +161,22 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   Maka akan muncul seperti berikut:
   
   ![createuser](./public/img/deluser.jpeg)
+
+   </br>
+  
+  alert apabila berhasil delete:
+
+ ![validuser](./public/img/popdeluser.jpeg)
   
   </br>
   
   ![createmovie](./public/img/delmovie.jpeg)
+
+ </br>
+  
+  alert apabila berhasil delete:
+
+ ![validuser](./public/img/popdelmovie.jpeg)
 
 
 6. Kemudian cobalah mencari data user atau movie :
