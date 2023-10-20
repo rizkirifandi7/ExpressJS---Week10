@@ -1,0 +1,45 @@
+
+<%- include("_navbar") -%>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="card m-5">
+                <div class="pt-4">
+                    <h4 class="text-center fw-bold">Edit User</h4>
+                </div>
+                <div class="card-body m-4">
+                    <form action="/users/edit/<%= user.id %>" method="post">
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="text" id="email" name="email" class="form-control" value="<%= user.email %>" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="gender">Gender</label>
+                            <select class="form-select" name="gender" id="gender">
+                                <option value="Male" <%= user.gender === 'Male' ? 'selected' : '' %>>Male</option>
+                                <option value="Female" <%= user.gender === 'Female' ? 'selected' : '' %>>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="text" id="password" name="password" class="form-control" value="<%= user.password %>" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="role">Role</label>
+                            <input type="text" id="role" name="role" class="form-control" value="<%= user.role %>" />
+                        </div>
+
+                        <div class="mt-4">
+                            <button class="btn btn-success" type="submit" value="Update">Update</button>
+                            <a class="btn btn-danger" href="/users/all">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("_footer") -%>

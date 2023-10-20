@@ -1,0 +1,52 @@
+<%- include("_navbar") -%>
+<div class="container">
+	<div class="row align-content-center justify-content-center">
+		<div class="col-8">
+			<div class="card m-5">
+				<div class="pt-4">
+					<h4 class="mb-0 text-center fw-bold">Add New User</h4>
+				</div>
+
+				<div class="card-body m-4">
+					<form action="/users/add" method="post" class="needs-validation" novalidate>
+						<div class="mb-3">
+							<label class="form-label" for="email">Email</label>
+							<input type="text" id="email" name="email" class="form-control" placeholder="Enter email" required/>
+							<div id="validationServerUsernameFeedback" class="invalid-feedback">Please enter your email</div>
+						</div>
+
+						<div class="mb-3">
+							<label class="form-label" for="gender">Gender</label>
+							<select class="form-select" name="gender" id="gender">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+
+						<div class="mb-3">
+							<label class="form-label" for="password">Password</label>
+							<input
+								type="text"
+								id="password"
+								name="password"
+								class="form-control"
+								placeholder="Enter password"
+								required
+							/>
+							<div id="validationServerUsernameFeedback" class="invalid-feedback">Please enter your password</div>
+						</div>
+
+						<div class="mb-3">
+							<label class="form-label" for="role">Role</label>
+							<input type="text" id="role" name="role" class="form-control" placeholder="Enter role" required />
+							<div id="validationServerUsernameFeedback" class="invalid-feedback">Please enter your role</div>
+						</div>
+
+						<button class="btn btn-success mt-3 w-100" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include("_footer") -%>

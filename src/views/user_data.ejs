@@ -1,0 +1,62 @@
+<%- include("_navbar") -%>
+<div class="container pt-3">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="mt-4 mb-2 fw-bold">List of Users (<%= users.length %>)</h3>
+
+			<div class="py-3">
+				<a class="btn btn-success" href="/users/add"><i class="fa-solid fa-plus"></i> Create</a>
+			</div>
+
+			<% if (successMessages && successMessages.length > 0) { %>
+			<div class="alert alert-success alert-dismissible" role="alert" id="successMessage">
+				<%= successMessages[0] %>
+				<button
+					type="button"
+					class="btn-close ms-auto"
+					data-dismiss="alert"
+					aria-label="Close"
+					id="closeSuccessMessage"
+				>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<% } %>
+
+			<div class="table-responsive-sm mt-2">
+				<table class="table table-hover my-3" id="usersTable">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Email</th>
+							<th>Gender</th>
+							<th>Password</th>
+							<th>Role</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody class="align-middle">
+						<% for (const user of users) { %>
+						<tr>
+							<td><%= user.id %></td>
+							<td><%= user.email %></td>
+							<td><%= user.gender %></td>
+							<td><%= user.password %></td>
+							<td><%= user.role %></td>
+							<td class="d-print-none">
+								<a class="btn btn-sm btn-warning" href="/users/edit/<%= user.id %>"
+									><i class="fa-solid fa-pen-to-square"></i
+								></a>
+								<a class="btn btn-sm btn-danger" href="/users/delete/<%= user.id %>"
+									><i class="fa-solid fa-trash-can"></i
+								></a>
+							</td>
+						</tr>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include("_footer") -%>

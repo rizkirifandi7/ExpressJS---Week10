@@ -1,0 +1,68 @@
+<%- include("_navbar") -%>
+<div class="container pt-3">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="mt-4 fw-bold">List of Movies (<%= movies.length %>)</h3>
+
+			<div class="py-3">
+				<a class="btn btn-success" href="/movies/add"><i class="fa-solid fa-plus"></i> Create</a>
+			</div>
+
+			<% if (successMessages && successMessages.length > 0) { %>
+			<div class="alert alert-success alert-dismissible" role="alert" id="successMessage">
+				<%= successMessages[0] %>
+				<button
+					type="button"
+					class="btn-close ms-auto"
+					data-dismiss="alert"
+					aria-label="Close"
+					id="closeSuccessMessage"
+				>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<% } %>
+
+			<div class="table-responsive-sm mt-2">
+				<% if (movies != ' ') { %>
+				<table class="table table-hover" id="moviesTable">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Title</th>
+							<th>Genres</th>
+							<th>Year</th>
+							<th>Photo</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody class="align-middle">
+						<% movies.forEach((row, movie_data) => { %>
+						<tr>
+							<td><%= row.id %></td>
+							<td><%= row.title %></td>
+							<td><%= row.genres %></td>
+							<td><%= row.year %></td>
+							<td><img src="/movies/uploads/<%= row.photo %>" width="100" class="img-thumbnail" /></td>
+							<td class="d-print-none">
+								<div class="button-container">
+									<a class="btn btn-sm btn-warning ms-2" href="/movies/edit/<%= row.id %>"
+										><i class="fa-solid fa-pen-to-square"></i
+									></a>
+									<a class="btn btn-sm btn-danger" href="/movies/delete/<%= row.id %>"
+										><i class="fa-solid fa-trash-can"></i
+									></a>
+								</div>
+							</td>
+						</tr>
+						<% }) %>
+					</tbody>
+				</table>
+				<% } else { %>
+				<h3 class="text-center mt-5">No Movies found in the database</h3>
+				<% } %>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include("_footer") -%>
