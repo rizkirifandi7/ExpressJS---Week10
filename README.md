@@ -98,10 +98,22 @@ Sebelum dapat menjalankan aplikasi, pastikan telah memenuhi persyaratan berikut:
   Maka akan muncul seperti berikut:
   
   ![createuser](./public/img/newuser.jpeg)
+
+  </br>
+  
+  Validasi apabila tidak diisi :
+
+ ![validuser](./public/img/validuser.jpeg)
   
   </br>
   
   ![createmovie](./public/img/newmovies.jpeg)
+  
+  </br>
+  
+  Validasi apabila tidak diisi :
+
+ ![validmovie](./public/img/validmovie.jpeg)
   
 
 4. Kemudian cobalah melakukan update data user atau movie :
