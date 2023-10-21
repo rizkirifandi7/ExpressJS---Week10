@@ -24,6 +24,7 @@
 			<% } %>
 
 			<div class="table-responsive-sm mt-2">
+                            <% if (users != ' ') { %>
 				<table class="table table-hover my-3" id="usersTable">
 					<thead>
 						<tr>
@@ -55,6 +56,9 @@
 						<% } %>
 					</tbody>
 				</table>
+                              <% } else { %>
+				<h3 class="text-center mt-5">No Users found in the database</h3>
+		              <% } %>
 			</div>
 		</div>
 	</div>
