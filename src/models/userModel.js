@@ -32,16 +32,6 @@ class UserModel {
 		}
 	}
 
-	// static async updateUser(id, email, gender, password, role) {
-	// 	try {
-	// 		const query = "UPDATE users SET email = $2, gender = $3, password = $4, role = $5 WHERE id = $1 RETURNING *";
-	// 		const result = await db.query(query, [id, email, gender, password, role]);
-	// 		return result.rows[0];
-	// 	} catch (error) {
-	// 		throw error;
-	// 	}
-	// }
-
 	static async updateUser(id, updatedData) {
 		const { email, gender, password, role } = updatedData;
 
